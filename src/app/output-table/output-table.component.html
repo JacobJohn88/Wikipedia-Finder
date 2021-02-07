@@ -1,0 +1,15 @@
+<table class="table is-bordered is-striped is-hoverable is-fullwidth">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>News</th>
+        <th>Word Count</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let searchresult of searchresults">
+          <td>{{searchresult.title}}</td>
+          <td [innerHTML]="searchresult.snippet"></td>
+          <td>{{searchresult.wordcount}}</td>
+        </tr>
+      </tbody>

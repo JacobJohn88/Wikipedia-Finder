@@ -1,0 +1,10 @@
+<mat-toolbar color="primary" >
+    <mat-icon class="title-center"aria-hidden="false" aria-label="Example home icon">auto_stories <span>WIKI SEARCH</span></mat-icon>
+  </mat-toolbar>
+  
+  <form class="example-form" >
+    <mat-form-field class="example-full-width">
+      <mat-label>Enter The Title to Search</mat-label>
+      <input matInput id="searchvalue" type="text" [(ngModel)]="searchvalue" name="searchvalue" placeholder="Ex. Cricket" (keyup.enter)="onSubmit()">
+    </mat-form-field>
+  </form>
